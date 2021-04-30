@@ -1,0 +1,14 @@
+.dystopia-card {
+  border: var(--border);
+}
+
+.dystopia-card .dystopia-card-title {
+  border-bottom: var(--border);
+  font-weight: 500;
+  mix-blend-mode: difference;
+}
+
+.dystopia-card .dystopia-card-title,
+.dystopia-card .dystopia-card-body {
+  padding: var(--padding);
+}

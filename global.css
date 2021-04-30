@@ -1,0 +1,39 @@
+html {
+  --padding: 0.4rem;
+  --accent-color: #7ddafe;
+  --text-color: white;
+  --margin: 2rem;
+  --border-color: white;
+  --border-width: 1px;
+  --border: var(--border-color) var(--border-width) solid;
+  --green: #07d674;
+  --red: #ff4b2c;
+
+  color: var(--text-color);
+  font-family: Fira Code;
+
+  background: linear-gradient(to left, #0b0b2b, #210c1e);
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}

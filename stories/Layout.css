@@ -1,0 +1,43 @@
+.dystopia-layout-header {
+  padding: var(--padding);
+  margin-bottom: var(--margin);
+  border-bottom: var(--border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dystopia-layout-actions {
+  display: flex;
+  gap: var(--margin);
+  align-items: baseline;
+}
+
+.dystopia-layout-nav > ul {
+  display: flex;
+  gap: var(--margin);
+  align-items: baseline;
+}
+
+.dystopia-layout-main {
+  max-width: 70rem;
+  margin: auto;
+  margin-bottom: var(--margin);
+}
+
+/* Tiny devices (phones, 575px and down) */
+@media (max-width: 575px) {
+  .dystopia-layout-main {
+    margin-left: var(--padding);
+    margin-right: var(--padding);
+  }
+}
+
+/* Medium devices (tablets, 991px and down) */
+@media (max-width: 991px) {
+  .dystopia-layout-main {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+  }
+}
