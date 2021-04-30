@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import avatar from './assets/avatar.png'
 import Avatar from './Avatar'
+import Crt from './Crt'
 
 import Page from './Page'
 
@@ -14,14 +15,12 @@ export default {
 }
 
 const title = <h1 key="title">Dystopia</h1>
-
 const about = <a key="about">About</a>
-
 const order = <a key="order">Order</a>
 
 const login = <a key="login">Jack in</a>
-
 const signup = <a key="signup">Register</a>
+const crt = <Crt init={true} />
 
 const content = (
   <Card title="1337">
@@ -56,6 +55,12 @@ export const WithMenu = () => (
 
 export const WithMenuAndActions = () => (
   <Page menu={[title, about, order]} actions={[signup, login]}>
+    {content}
+  </Page>
+)
+
+export const WithMenuActionsAndCrt = () => (
+  <Page menu={[title, about, order]} actions={[signup, login, crt]}>
     {content}
   </Page>
 )

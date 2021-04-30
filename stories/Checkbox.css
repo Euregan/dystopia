@@ -1,0 +1,11 @@
+.dystopia-checkbox,
+.dystopia-checkbox [type='checkbox'] {
+  cursor: pointer;
+}
+
+.dystopia-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--padding);
+}
