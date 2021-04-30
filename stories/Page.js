@@ -1,6 +1,6 @@
-import './Layout.css'
+import './Page.css'
 
-const Layout = ({ menu, actions, children }) => (
+const Page = ({ menu, actions, children }) => (
   <>
     <header className="dystopia-layout-header">
       <nav className="dystopia-layout-nav">
@@ -20,4 +20,4 @@ const Layout = ({ menu, actions, children }) => (
   </>
 )
 
-export default Layout
+export default Page

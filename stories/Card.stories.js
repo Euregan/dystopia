@@ -3,7 +3,7 @@ import React from 'react'
 import Card from './Card'
 
 export default {
-  title: 'Components/Card',
+  title: 'Components/Layouts/Card',
   component: Card,
   argTypes: {
     title: { control: 'text' },

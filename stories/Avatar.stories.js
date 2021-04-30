@@ -4,7 +4,7 @@ import avatar from './assets/avatar.png'
 import Avatar from './Avatar'
 
 export default {
-  title: 'Components/Avatar',
+  title: 'Components/Display/Avatar',
   component: Avatar,
   argTypes: {
     size: { control: 'inline-radio', options: ['small', 'large'] },

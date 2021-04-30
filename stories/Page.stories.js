@@ -3,11 +3,11 @@ import Card from './Card'
 import avatar from './assets/avatar.png'
 import Avatar from './Avatar'
 
-import Layout from './Layout'
+import Page from './Page'
 
 export default {
-  title: 'Components/Layout',
-  component: Layout,
+  title: 'Components/Layouts/Page',
+  component: Page,
   parameters: {
     layout: 'fullscreen',
   },
@@ -42,20 +42,20 @@ const content = (
   </Card>
 )
 
-export const Basic = () => <Layout menu={[title]}>{content}</Layout>
+export const Basic = () => <Page menu={[title]}>{content}</Page>
 
 export const WithActions = () => (
-  <Layout menu={[title]} actions={[signup, login]}>
+  <Page menu={[title]} actions={[signup, login]}>
     {content}
-  </Layout>
+  </Page>
 )
 
 export const WithMenu = () => (
-  <Layout menu={[title, about, order]}>{content}</Layout>
+  <Page menu={[title, about, order]}>{content}</Page>
 )
 
 export const WithMenuAndActions = () => (
-  <Layout menu={[title, about, order]} actions={[signup, login]}>
+  <Page menu={[title, about, order]} actions={[signup, login]}>
     {content}
-  </Layout>
+  </Page>
 )
