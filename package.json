@@ -6,7 +6,7 @@
   "scripts": {
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
-    "build-storybook-doc": "build-storybook --docs"
+    "build-storybook-doc": "build-storybook -s ./public --docs"
   },
   "author": "Valentin Manceaux-Panot",
   "license": "ISC",
