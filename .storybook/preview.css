@@ -1,3 +1,24 @@
 .docs-story {
   background: linear-gradient(to left, #0b0b2b, #210c1e) !important;
 }
+
+/* Overriding Storybook style to make sure the components are displayed correctly */
+.full-canvas .docs-story > div {
+  margin: 0;
+  padding: 0;
+}
+
+.full-canvas .docs-story .innerZoomElementWrapper > div {
+  border: none !important;
+}
+
+/* Adding a margin to the page because its container is small */
+.docs-story .dystopia-layout-main {
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+}
+
+/* Hiding overflow to hide the Crt trick */
+.hide-overflow .docs-story > div {
+  overflow: hidden;
+}

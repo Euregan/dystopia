@@ -4,16 +4,32 @@ import Card from './Card'
 import avatar from './assets/avatar.png'
 import Avatar from './Avatar'
 import Crt from './Crt'
-import { WithMenuActionsAndCrt } from './Page.stories'
+import Flexbox from './Flexbox'
 
-<Meta
-  title="Documentation/Layouts/Page"
-  component={Page}
-  parameters={{ layout: 'centered' }}
-/>
+<Meta title="Documentation/Layout/Page" component={Page} />
 
 A Page component should only be used once, and all of the site content should be put in its children
 
-<Canvas>
-  <WithMenuActionsAndCrt />
+<Canvas className="full-canvas">
+  <Page
+    menu={[
+      <h1 key="title">Dystopia</h1>,
+      <a key="about">About</a>,
+      <a key="order">Order</a>,
+    ]}
+    actions={[<a key="login">Jack in</a>, <a key="signup">Register</a>]}
+  >
+    <Card title="Retro future is the new future" color="#ae1c13">
+      <Flexbox direction="row" gap="small">
+        <Avatar picture={avatar} size="large" />
+        <Flexbox direction="column" gap="small">
+          <span>Hello developer</span>
+          <span>
+            Welcome to the wonderful land of the Dystopia Design System
+          </span>
+          <span>Hope you'll find it to your liking</span>
+        </Flexbox>
+      </Flexbox>
+    </Card>
+  </Page>
 </Canvas>

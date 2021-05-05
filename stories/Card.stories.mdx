@@ -1,0 +1,35 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+import Card from './Card'
+
+<Meta title="Documentation/Layout/Card" component={Card} />
+
+A Card is a simple container component to organize content in visual boxes.
+The simplest card simply display its content.
+
+<Canvas>
+  <Card>
+    Some nice content
+    <br />
+    You really can put anything in there
+  </Card>
+</Canvas>
+
+You can also specify a title to cards if they're in dire need for an identity
+
+<Canvas>
+  <Card title="Now with a sweet title">
+    Some nice content
+    <br />
+    You really can put anything in there
+  </Card>
+</Canvas>
+
+If you really need to add some flair to a card, simply pass it an hex color.
+
+<Canvas>
+  <Card title="Now with a sweet title and some color" color="#ae1c13">
+    Some nice content
+    <br />
+    You really can put anything in there
+  </Card>
+</Canvas>

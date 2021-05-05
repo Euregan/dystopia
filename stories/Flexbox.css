@@ -1,0 +1,19 @@
+.dystopia-flexbox {
+  display: flex;
+}
+
+.dystopia-flexbox-small {
+  gap: var(--padding);
+}
+
+.dystopia-flexbox-large {
+  gap: var(--margin);
+}
+
+.dystopia-flexbox-column {
+  flex-direction: column;
+}
+
+.dystopia-flexbox-row {
+  flex-direction: row;
+}
