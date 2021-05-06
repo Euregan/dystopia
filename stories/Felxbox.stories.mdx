@@ -1,0 +1,48 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+import alexey from './assets/alexey.png'
+import guilherme from './assets/guilherme.png'
+import mukul from './assets/mukul.png'
+import wassim from './assets/wassim.png'
+import Avatar from './Avatar'
+import Flexbox from './Flexbox'
+
+<Meta title="Documentation/Layout/Flexbox" component={Flexbox} />
+
+Flexboxes allow for an easy and consistent layout of information.
+They come with two gap sizes
+
+<Canvas>
+  <Flexbox direction="column" gap="large">
+    <Flexbox direction="row" gap="small">
+      <Avatar picture={alexey} size="large" />
+      <Avatar picture={guilherme} size="large" />
+      <Avatar picture={mukul} size="large" />
+      <Avatar picture={wassim} size="large" />
+    </Flexbox>
+    <Flexbox direction="row" gap="large">
+      <Avatar picture={alexey} size="large" />
+      <Avatar picture={guilherme} size="large" />
+      <Avatar picture={mukul} size="large" />
+      <Avatar picture={wassim} size="large" />
+    </Flexbox>
+  </Flexbox>
+</Canvas>
+
+They can be used either horizontally or vertically
+
+<Canvas>
+  <Flexbox direction="row" gap="large">
+    <Flexbox direction="column" gap="small">
+      <Avatar picture={alexey} size="large" />
+      <Avatar picture={guilherme} size="large" />
+      <Avatar picture={mukul} size="large" />
+      <Avatar picture={wassim} size="large" />
+    </Flexbox>
+    <Flexbox direction="column" gap="large">
+      <Avatar picture={alexey} size="large" />
+      <Avatar picture={guilherme} size="large" />
+      <Avatar picture={mukul} size="large" />
+      <Avatar picture={wassim} size="large" />
+    </Flexbox>
+  </Flexbox>
+</Canvas>

@@ -6,7 +6,10 @@ const Avatar = ({ picture, size }) =>
   picture ? (
     <img
       className="dystopia-avatar-image"
-      style={{ height: `${sizeToPixels(size)}px` }}
+      style={{
+        height: `${sizeToPixels(size)}px`,
+        width: `${sizeToPixels(size)}px`,
+      }}
       src={picture}
     />
   ) : (
