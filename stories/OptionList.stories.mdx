@@ -1,0 +1,21 @@
+import { Meta, Canvas, Actions } from '@storybook/addon-docs/blocks'
+import OptionList from './OptionList'
+
+<Meta
+  title="Documentation/Input/OptionList"
+  component={OptionList}
+  argTypes={{ onChange: { action: 'clicked' } }}
+/>
+
+The OptionList component is used to allow the user to pick one or several
+options from a restricted list of values.
+
+<Canvas>
+  <OptionList
+    label="Select your weapons"
+    options={[
+      { id: 1, name: 'Cyberdeck' },
+      { id: 2, name: "Good ol' keyboard" },
+    ]}
+  />
+</Canvas>

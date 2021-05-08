@@ -1,0 +1,5 @@
+.dystopia-optionlist-head {
+  padding-bottom: var(--padding);
+  margin-bottom: var(--padding);
+  border-bottom: var(--border);
+}
