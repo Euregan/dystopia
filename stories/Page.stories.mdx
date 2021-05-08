@@ -2,7 +2,7 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
 import Page from './Page'
 import Card from './Card'
 import avatar from './assets/guilherme.png'
-import Avatar from './Avatar'
+import Picture from './Picture'
 import Crt from './Crt'
 import Flexbox from './Flexbox'
 
@@ -21,7 +21,7 @@ A Page component should only be used once, and all of the site content should be
   >
     <Card title="Retro future is the new future" color="#ae1c13">
       <Flexbox direction="row" gap="small">
-        <Avatar picture={avatar} size="large" />
+        <Picture source={avatar} size="large" />
         <Flexbox direction="column" gap="small">
           <span>Hello developer</span>
           <span>

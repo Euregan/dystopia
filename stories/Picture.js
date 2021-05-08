@@ -1,21 +1,21 @@
-import './Avatar.css'
+import './Picture.css'
 
 const sizeToPixels = (size) => ({ small: 16, large: 73 }[size])
 
-const Avatar = ({ picture, size }) =>
-  picture ? (
+const Picture = ({ source, size }) =>
+  source ? (
     <img
-      className="dystopia-avatar-image"
+      className="dystopia-picture-image"
       style={{
         height: `${sizeToPixels(size)}px`,
         width: `${sizeToPixels(size)}px`,
       }}
-      src={picture}
+      src={source}
     />
   ) : (
     <>
       <svg
-        className="dystopia-avatar-blank"
+        className="dystopia-picture-blank"
         viewBox={`0 0 ${sizeToPixels(size)} ${sizeToPixels(size)}`}
         style={{ height: `${sizeToPixels(size)}px` }}
       >
@@ -25,4 +25,4 @@ const Avatar = ({ picture, size }) =>
     </>
   )
 
-export default Avatar
+export default Picture

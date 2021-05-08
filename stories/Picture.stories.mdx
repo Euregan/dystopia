@@ -1,0 +1,19 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+import avatar from './assets/guilherme.png'
+import Picture from './Picture'
+
+<Meta title="Documentation/Content/Picture" component={Picture} />
+
+An Picture is a component used to display a picture. It comes in two sizes, `large` and `small`
+
+<Canvas>
+  <Picture source={avatar} size="large" />
+  <Picture source={avatar} size="small" />
+</Canvas>
+
+It also gracefully handles missing pictures
+
+<Canvas>
+  <Picture source={null} size="large" />
+  <Picture source={null} size="small" />
+</Canvas>

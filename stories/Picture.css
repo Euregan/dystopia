@@ -1,9 +1,9 @@
-.dystopia-avatar-blank {
+.dystopia-picture-blank {
   box-sizing: border-box;
   border: var(--border);
 }
 
-.dystopia-avatar-blank line {
+.dystopia-picture-blank line {
   stroke-width: var(--border-width);
   stroke: var(--border-color);
 }
