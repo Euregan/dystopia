@@ -1,0 +1,39 @@
+.dystopia-loading {
+  display: flex;
+  align-items: center;
+}
+
+.dystopia-loading::after,
+.dystopia-loading::before {
+  content: '';
+  width: var(--margin);
+  height: 1rem;
+  display: block;
+  background: repeating-linear-gradient(
+    45deg,
+    white,
+    white 4px,
+    transparent 4px,
+    transparent 13px
+  );
+  animation: slide 20s infinite linear forwards;
+  background-size: calc(var(--margin) * 10) 1rem;
+  background-position-x: 0%;
+}
+
+.dystopia-loading::before {
+  margin-right: var(--padding);
+}
+
+.dystopia-loading::after {
+  margin-left: var(--padding);
+}
+
+@keyframes slide {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
