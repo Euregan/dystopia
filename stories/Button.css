@@ -1,0 +1,9 @@
+.dystopia-button {
+  border: var(--border);
+  background: transparent;
+  color: var(--text-color);
+  padding: var(--padding);
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Fira Code;
+}

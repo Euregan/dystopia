@@ -1,6 +1,7 @@
 import { Meta, Canvas } from '@storybook/addon-docs/blocks'
 import Card from './Card'
 import Picture from './Picture'
+import Button from './Button'
 import Flexbox from './Flexbox'
 import avatar from './assets/guilherme.png'
 
@@ -13,7 +14,10 @@ A component library for React, rooted in the past, but powered by the future ✨
 <Canvas>
   <Card title="Retro future is the new future" color="#ae1c13">
     <Flexbox direction="row" gap="small">
-      <Picture source={avatar} size="large" />
+      <Flexbox direction="column" gap="small">
+        <Picture source={avatar} size="large" />
+        <Button>Jack in</Button>
+      </Flexbox>
       <Flexbox direction="column" gap="small">
         <span>Hello developer</span>
         <span>Welcome to the wonderful land of the Dystopia Design System</span>
