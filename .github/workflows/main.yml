@@ -1,7 +1,6 @@
 name: npm package
 on:
-  release:
-    types: [created]
+  push
 jobs:
   build:
     runs-on: ubuntu-latest
