@@ -1,0 +1,7 @@
+.gitignore
+.prettierrc
+.git
+storybook-static
+.storybook
+**.stories.**
+/stories/assets
