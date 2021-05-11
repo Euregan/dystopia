@@ -4,7 +4,7 @@
   "main": "dist/dystopia.js",
   "module": "dist/dystopia.module.js",
   "umd:main": "dist/dystopia.umd.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A cyberpunk components library",
   "repository": "https://github.com/Euregan/dystopia/",
   "scripts": {
