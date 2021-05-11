@@ -4,7 +4,7 @@
   "main": "dist/dystopia.js",
   "module": "dist/dystopia.module.js",
   "umd:main": "dist/dystopia.umd.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A cyberpunk components library",
   "scripts": {
     "build": "microbundle --jsx jsx --jsxImportSource react --globals react/jsx-runtime=jsx",
