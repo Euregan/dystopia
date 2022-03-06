@@ -1,6 +1,6 @@
 import './Picture.css'
 
-const sizeToPixels = (size) => ({ small: 16, large: 73 }[size])
+const sizeToPixels = (size) => ({ small: 16, large: 73 }[size] || size)
 
 const Picture = ({ source, size }) =>
   source ? (

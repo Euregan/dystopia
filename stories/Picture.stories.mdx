@@ -4,9 +4,11 @@ import Picture from './Picture'
 
 <Meta title="Documentation/Content/Picture" component={Picture} />
 
-An Picture is a component used to display a picture. It comes in two sizes, `large` and `small`
+A Picture is a component used to display a picture. It comes in two default sizes,
+`large` and `small`, though you can also give it a specific pixel size.
 
 <Canvas>
+  <Picture source={avatar} size="300" />
   <Picture source={avatar} size="large" />
   <Picture source={avatar} size="small" />
 </Canvas>
@@ -14,6 +16,7 @@ An Picture is a component used to display a picture. It comes in two sizes, `lar
 It also gracefully handles missing pictures
 
 <Canvas>
+  <Picture source={null} size="300" />
   <Picture source={null} size="large" />
   <Picture source={null} size="small" />
 </Canvas>
